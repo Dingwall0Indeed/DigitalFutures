@@ -1,0 +1,1 @@
+The Header.jpg image shows the current state of the banner (possibly changed for now). While this layout is subject to change, just take note that there will need to be a navigation bar and possibly a quick search thingy. 
