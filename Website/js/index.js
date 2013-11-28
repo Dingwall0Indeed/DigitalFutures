@@ -41,10 +41,16 @@ $(document).ready(function(){
       	$(window).scroll(function() {
 					  
 		  // Scroll the background at var speed
-		  // the yPos is a negative value because we're scrolling it UP!								
-		  var yPos = ($window.scrollTop() / 0.5); 								
+		  // the yPos is a negative value because we're scrolling it UP!	
+		  if ($window.scrollTop() > 150) {
+		  		$bgobj.css({ top: '-150px' });
+		  }
+		  else {
+		  		$bgobj.css({ top: -$window.scrollTop() });
+		  }
+		  /*var yPos = ($window.scrollTop() / 0.5); 								
 		  yPos = '0px'; 
-		  $bgobj.css({ top: yPos });
+		  $bgobj.css({ top: yPos });*/
 		  
 		  
 		}); // window scroll Ends
