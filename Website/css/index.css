@@ -1,40 +1,33 @@
-
-
-
-body{
+body {
 	margin:0;
 	padding:0;
 }
-
-
-#home { 
-	background: url(../images/home.jpg) 50% 0 no-repeat fixed; 
-	height: 1000px;  
-	margin: 0 auto; 
-    width: 100%; 
-    max-width: 1920px; 
-    position: relative; 
-    box-shadow: 0 0 50px rgba(0,0,0,0.8);
-}
-#about { 
-	background: url(../images/about.jpg) 50% 0 no-repeat fixed; 
+#home {
+	background: url(../images/home.jpg) 50% 0 no-repeat fixed;
 	height: 1000px;
-	margin: 0 auto; 
-    width: 100%; 
-    max-width: 1920px; 
-    position: relative; 
-    box-shadow: 0 0 50px rgba(0,0,0,0.8);
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1920px;
+	position: relative;
+	box-shadow: 0 0 50px rgba(0, 0, 0, 0.8);
 }
-
+#about {
+	background: url(../images/about.jpg) 50% 0 no-repeat fixed;
+	height: 1000px;
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1920px;
+	position: relative;
+	box-shadow: 0 0 50px rgba(0, 0, 0, 0.8);
+}
 #header {
 	background: url(../images/bg-header.jpg) no-repeat top center;
-    // From here
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 0;
+ // From here  margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
 	position: fixed;
-    // To here, I'm unsure how reliable this is
+ // To here, I'm unsure how reliable this is
 	height: 150px;
     top: 0px;
 }
@@ -91,9 +84,16 @@ body{
 	background-position: -492px -411px;
 }
 #header .navigation {
-	background: url(../images/bg-navigation-right.gif) no-repeat bottom right;
+	/*background: url(../images/bg-navigation-right.gif) no-repeat bottom right;*/
+	width: 960px;
+	margin: 0 auto;
+    top: -53px;
+    position: relative;
+}
+#header .navigation_bg {
+    background: url(../images/bg-navigation.png) repeat-x bottom left;
 	width: 100%;
-	margin-left:0px;
+    height: 50px;
 }
 #header .navigation > ul:before, #header .navigation > ul:after {
 	content: "";
@@ -103,7 +103,7 @@ body{
 	clear: both;
 }
 #header .navigation > ul {
-	background: url(../images/bg-navigation.png) repeat-x bottom left;
+	/*background: url(../images/bg-navigation.png) repeat-x bottom left;*/
 	margin: 0;
 	margin-left: 0px;
 	margin-right: auto;
@@ -239,5 +239,3 @@ body{
 	font-weight: normal;
 	font-style: normal;
 }
-
-
