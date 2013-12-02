@@ -12,6 +12,24 @@ $(document).ready(function(){
 			
 		}*/
 	}
+	
+	var ytVideoSrc = "http://www.youtube.com/embed/uhDPkOrIKOQ";
+	$(document).ready(function () {
+		$('.video-wrap img[rel]').overlay({
+		mask: {
+		color: '#333',
+		opacity: 0.5
+		},
+		top: 'center',
+		fixed: true,
+		onBeforeLoad: function () {
+		$("#videoOverlay iframe").attr("src", ytVideoSrc )
+		},
+		onBeforeClose: function () {
+		$("#videoOverlay iframe").attr("src", "#")
+		}
+		});
+	});
                 
    $('section[data-type="background"]').each(function(){ 
    // Iterate over all background types on the page

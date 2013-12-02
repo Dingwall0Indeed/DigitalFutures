@@ -7,6 +7,16 @@
 	position: relative;
 	box-shadow: 0 0 50px rgba(0, 0, 0, 0.8);
 }
+#home article { 
+    background: url("../images/intro.png") no-repeat scroll center top transparent; 
+    height: 458px; 
+    position: absolute; 
+    text-indent: -9999px; 
+    top: 291px; 
+    width: 100%; 
+}
+
+
 #about {
 	background: url(../images/about.jpg) 50% 0 no-repeat fixed;
 	height: 1000px;
@@ -16,25 +26,6 @@
 	position: relative;
 	box-shadow: 0 0 50px rgba(0, 0, 0, 0.8);
 }
-#videos {
-	background: url(../images/about.jpg) 50% 0 no-repeat fixed;
-	height: 1000px;
-	margin: 0 auto;
-	width: 100%;
-	max-width: 1920px;
-	position: relative;
-	box-shadow: 0 0 50px rgba(0, 0, 0, 0.8);
-}
-
-
-#home article { 
-    background: url("../images/intro.png") no-repeat scroll center top transparent; 
-    height: 458px; 
-    position: absolute; 
-    text-indent: -9999px; 
-    top: 291px; 
-    width: 100%; 
-}
 #about article { 
     background: url("../images/parallax.png") no-repeat scroll center top transparent; 
     height: 458px; 
@@ -43,12 +34,64 @@
     top: 291px; 
     width: 100%; 
 }
-#videos article { 
-    background: url("../images/parallax.png") no-repeat scroll center top transparent; 
-    height: 458px; 
+
+
+#videos {
+	/*background: url(../images/about.jpg) 50% 0 no-repeat fixed;*/
+	background-color:#C60;
+	height: 600px;
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1920px;
+	position: relative;
+	box-shadow: 0 0 50px rgba(0, 0, 0, 0.8);
+}
+#videos div { 
+    /*background: url("../images/parallax.png") no-repeat scroll center top transparent;*/
+    height: 100%;
+    width: 100%;  
     position: absolute; 
     text-indent: -9999px; 
-    top: 291px; 
-    width: 100%; 
+}
+.youtube-player{
+    border: 1px solid #1D740C;
+    height: 390px;
+    width: 480px;
+    padding: 0px;
+    margin-left: 25px;
+    margin-bottom: 25px;
 }
 
+#movie {
+    margin-bottom: 50px;
+	width: 80%;
+    padding: 30px 10%;
+    max-width: 960px;
+    margin: 0px auto;
+    position: relative;
+    font-size: 17px;
+    text-align: center;
+    height: 300px;
+}
+#movie > div:first-child {
+    margin-right: 4%;
+}
+#movie > div {
+    width: 48%;
+    float: left;
+    text-align: center;
+}
+#movie > div img {
+    margin-bottom: 10px;
+}
+img {
+    border: 0px none;
+}
+
+a:hover img {
+    opacity: 0.5;
+}
+
+a img {
+    transition: opacity 0.4s ease-in-out 0s;
+}
