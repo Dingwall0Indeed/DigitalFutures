@@ -36,8 +36,7 @@
 }
 
 
-#videos {
-	/*background: url(../images/about.jpg) 50% 0 no-repeat fixed;*/
+/*#videos {
 	background-color:#C60;
 	height: 600px;
 	margin: 0 auto;
@@ -47,12 +46,11 @@
 	box-shadow: 0 0 50px rgba(0, 0, 0, 0.8);
 }
 #videos div { 
-    /*background: url("../images/parallax.png") no-repeat scroll center top transparent;*/
     height: 100%;
     width: 100%;  
     position: absolute; 
     text-indent: -9999px; 
-}
+}*/
 .youtube-player{
     border: 1px solid #1D740C;
     height: 390px;
@@ -83,6 +81,7 @@
 }
 #movie > div img {
     margin-bottom: 10px;
+	width: 100%;
 }
 img {
     border: 0px none;
@@ -94,4 +93,5 @@ a:hover img {
 
 a img {
     transition: opacity 0.4s ease-in-out 0s;
+    opacity: 1;
 }

@@ -13,6 +13,10 @@ $(document).ready(function(){
 		}*/
 	}
 	
+	function video1Click () {
+		// Code!!!	
+	}
+	
 	var ytVideoSrc = "http://www.youtube.com/embed/uhDPkOrIKOQ";
 	$(document).ready(function () {
 		$('.video-wrap img[rel]').overlay({

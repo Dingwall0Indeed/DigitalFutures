@@ -31,7 +31,7 @@
 <!--<section id="videos" data-speed="4" data-type="background">-->
   <div id="movie">
 
-    <div id="video1">
+    <div id="video1" onClick="video1Click()">
     	<a href="http://www.youtube.com/embed/E9Q6ac5NVgU?rel=0&fs=0&autoplay=1">
         	<img class="style" src="images/movie_01.png"></img>
         </a>
@@ -68,10 +68,10 @@
 
 <div id="header"  data-type="_header">
   <div> <a href="index.html" class="logo"><img src="images/logo.jpg" alt=""></a>
-    <form action="index.html">
+<!--    <form action="index.html">
       <input type="text" name="search" id="search" value="">
       <input type="submit" name="searchBtn" id="searchBtn" value="">
-    </form>
+    </form>-->
   </div>
   <div id="nav_bar_bg" class="navigation_bg"> </div>
   <div id="nav_bar" class="navigation">
@@ -103,6 +103,12 @@
       </li>
       <li> <a href="contact.html">contact</a> </li>
       <li class="booking"> <a href="booking.html">contact us</a> </li>
+      <li class="search">
+          <form action="index.html">
+      <input type="text" name="search" id="search" value="">
+      <input type="submit" name="searchBtn" id="searchBtn" value="">
+    </form>
+      </li>
     </ul>
   </div>
 </div>
