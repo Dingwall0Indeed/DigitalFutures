@@ -57,11 +57,9 @@ $(document).ready(function(){
    });	        
    $('div[data-type="_header"]').each(function(){ 
    // Iterate over all background types on the page
-   // That's everything with the 'data-type='background'' tag
+   // That's everything with the 'data-type='_header'' tag
      	var $bgobj = $(this); // assigning the object
-                    
       	$(window).scroll(function() {
-					  
 		  // Scroll the background at var speed
 		  // the yPos is a negative value because we're scrolling it UP!	
 		  if ($window.scrollTop() > 150) {
@@ -70,11 +68,6 @@ $(document).ready(function(){
 		  else {
 		  		$bgobj.css({ top: -$window.scrollTop() });
 		  }
-		  /*var yPos = ($window.scrollTop() / 0.5); 								
-		  yPos = '0px'; 
-		  $bgobj.css({ top: yPos });*/
-		  
-		  
 		}); // window scroll Ends
    });	
    
